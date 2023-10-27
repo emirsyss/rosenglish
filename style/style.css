@@ -1,0 +1,166 @@
+* {
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    
+}
+html {
+
+    font-size: 10px;
+    
+}
+body {
+    margin: 0;
+    background-color: white;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;  
+}
+.container {
+    align-items: center; 
+    flex-direction: column;
+    display: flex;
+
+    width: 500px;
+    height: 400px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+    box-shadow: 3px 2px 15px -2px  rgb(15,15,15);
+}
+#title{
+    font-size: 40px;
+    font-family: 'Dela Gothic One', cursive;
+    background: linear-gradient(45deg, rgb(86, 214, 250) 1%, rgb(0, 81, 255) 90%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+#wordDisplay {
+    border-radius: 15px;
+    padding: 6px;
+    border: 1px solid rgb(64,128,255);
+    font-family: 'Open Sans', sans-serif;
+    color: black; 
+    font-size: 20px;
+    text-align: center;
+}
+
+#generateButton {   
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(89, 152, 255);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+#generateButton:hover {
+    transform: scale(1.04);
+background-color: rgb(4, 84, 255);
+}
+
+#checkButton {   
+    margin-top: 20px; 
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(89, 152, 255);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+#checkButton:hover {
+    transform: scale(1.04);
+background-color: rgb(4, 84, 255);
+}
+#turkishInput {
+    
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+    border: none;
+    border: 1px solid rgb(64,128,255);
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 17px;
+}
+#turkishInput::placeholder {
+    color: rgb(15,15,15);
+}
+#turkishInput:focus {
+    outline: none !important; 
+
+    border-color: rgb(107, 156, 255);
+}
+.designer {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    text-align: center; 
+    position: fixed;
+    bottom: -16px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+}
+.designer #emirixsBtn {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(64,128,255);
+    margin-left: -5px;
+    transition: color 0.4s;
+}
+.designer #emirixsBtn:hover {
+    color: black;
+}
+
+@media (min-width: 1440px) {
+    #checkButton, #generateButton {
+        width: 180px;
+    height: 50px;
+    font-size: 20px;
+    }
+    #wordDisplay {
+        width: 300px;
+    height: 40px;
+    }
+    #turkishInput {
+        width: 300px;
+    }
+    
+
+}
+@media (max-width: 1439px) {
+    .container {
+        width: 400px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 45px;
+    }
+    .container {
+        width: 100%;
+    }
+    #checkButton, #generateButton {
+        width: 200px;
+    height: 60px;
+    font-size: 20px;
+    }
+    #wordDisplay, #turkishInput {
+        width: 300px;
+    height: 50px;
+    }
+}

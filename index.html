@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rosenglish Kelime Pratiği</title>
+</head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <div class="container">
+        <h1 id="title">ROSENGLISH</h1>
+        <p id="wordDisplay">Kelime üret butonuna tıkla!</p>
+        <input type="text" id="turkishInput" placeholder="Türkçe anlamı girin" oninput="forceLowercase(this)">
+        <button id="checkButton">Kontrol Et</button>
+        <button id="generateButton">Yeni Kelime Üret</button>
+        <script src="script/script.js"></script>
+    </div>
+    <div class="designer">
+        <p id="designedBy"> Designed by </p>
+        <p id="emirixsBtn"> Emirixs </p> 
+        <script>
+            const emirixsBtn = document.getElementById("emirixsBtn");
+
+            function emirixsSite() {
+                window.open('http://www.roseliasoftware.com/emirixs', '_blank');
+    
+}
+            emirixsBtn.addEventListener("click", emirixsSite);
+        </script>       
+    </div>
+    
+
+    
+</body>
+</html>
